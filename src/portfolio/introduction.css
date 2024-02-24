@@ -1,0 +1,80 @@
+/* TopPage.css */
+body{
+    margin:0;
+    font-family: 'arial';
+}
+/* Style for the top-page-container */
+.top-page-container {
+    /* width: calc(100%-350px); */
+    position: relative;
+    height: 100vh; /* Full viewport height */
+    overflow-y: auto; /* Ensure the background image doesn't overflow */
+  }
+  
+  
+  ul {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    
+  }
+  
+  ul li {
+    display: inline-block;
+    margin-right: 20px;
+  }
+  
+  ul li:last-child {
+    margin-right: 0;
+  }
+  
+  ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s ease;
+    cursor: pointer;
+    
+  }
+  
+  ul li a:hover {
+    color: lightgrey;
+    
+
+  }
+  
+  /* Style for the background image */
+  
+  
+  /* Style for the content */
+  .content {
+    position: absolute;
+    top: 50%;
+    left: 25%;
+    transform: translate(-50%, -50%);
+    color: #ffffff; /* Text color */
+  }
+  
+  .content h1 {
+    font-size: 40px; /* Adjust font size as needed */
+  }
+  
+  .content p {
+    font-size: 2rem; /* Adjust font size as needed */
+  }
+  /* Media query for mobile screen width */
+@media (max-width: 767px) {
+  .content {
+      align-items: center;
+  }
+  .content h1{
+    font-size: 30px;
+  }
+  .content p{
+    font-size: 1.5rem;
+  }
+}

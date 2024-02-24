@@ -1,0 +1,82 @@
+.contact-box {
+    display: flex;
+    flex-wrap: wrap; /* Allow flex items to wrap */
+    height: 70vh;
+  }
+  
+  .left-contact-box {
+    flex: 1;
+    padding: 20px; /* Add padding for spacing inside the box */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow effect */
+    border-radius: 10px; /* Add border-radius for rounded corners */
+    overflow: hidden; /* Hide overflowing content */
+  }
+  
+  .right-contact-box {
+    flex: 1;
+    padding: 20px; /* Add padding for spacing inside the box */
+    margin-left: 20px; /* Add margin to separate the boxes */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow effect */
+    border-radius: 10px; /* Add border-radius for rounded corners */
+    overflow: hidden; /* Hide overflowing content */
+  }
+  
+  /* Media query for smaller screens */
+  @media (max-width: 768px) {
+    .left-contact-box,
+    .right-contact-box {
+      flex-basis: 100%; /* Make boxes full width on smaller screens */
+      margin-left: 0; /* Remove margin for smaller screens */
+      margin-top: 20px; /* Add margin to separate the boxes vertically */
+    }
+  }
+/* Styling for input fields */
+.inputRow input {
+    width: calc(100% - 20px); /* Set width for input fields */
+    padding: 10px; /* Add padding */
+    margin-bottom: 10px; /* Add margin bottom */
+    border: 1px solid #ccc; /* Add border */
+    border-radius: 5px; /* Add border radius */
+    outline: none; /* Remove default outline */
+  }
+
+  .subjectInput{
+    width: calc(100% - 20px); /* Set width for input fields */
+    padding: 10px; /* Add padding */
+    margin-bottom: 10px; /* Add margin bottom */
+    border: 1px solid #ccc; /* Add border */
+    border-radius: 5px; /* Add border radius */
+    outline: none; /* Remove default outline */
+
+  } 
+  
+  .messageInput {
+    width: calc(100% - 20px); /* Set width for message input */
+    padding: 10px; /* Add padding */
+    margin-bottom: 10px; /* Add margin bottom */
+    border: 1px solid #ccc; /* Add border */
+    border-radius: 5px; /* Add border radius */
+    outline: none;
+    height: 150px; /* Set height for message input */
+    resize: vertical; /* Allow vertical resizing */
+  }
+  
+  /* Styling for the submit button */
+  .send-btn {
+    text-align: center; /* Center align button */
+  }
+  
+  .send-btn .btn {
+    margin: 10px;
+    padding: 10px 20px; /* Add padding */
+    background-color: #007bff; /* Set background color */
+    color: #fff; /* Set text color */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Add border radius */
+    cursor: pointer; /* Add cursor pointer */
+  }
+  
+  .send-btn .btn:hover {
+    background-color: #0056b3; /* Change background color on hover */
+  }
+    

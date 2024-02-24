@@ -1,0 +1,56 @@
+
+body{
+  margin: 0;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+  
+
+.left-column {
+  width: 21%;
+  float: left;
+  background-color: rgb(15, 3, 21);
+  height: 100vh; /* Adjust height as needed */
+  box-sizing: border-box; /* Include padding and border in the width */
+}
+
+/* Style for right scrollable column */
+.right-column {
+  width: 79%;
+  float: left;
+  overflow-y: auto; /* Enable vertical scrolling */
+  height: 100vh; /* Adjust height as needed */
+  box-sizing: border-box; /* Include padding and border in the width */
+}
+
+@media (max-width :1000px) {
+  .right-column{
+    width: 100%;
+    overflow-y: auto; /* Enable vertical scrolling */
+    height: 100vh; /* Adjust height as needed */
+    box-sizing: border-box;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position:center;
+  }
+  .left-column{
+    display: none;
+  }
+  
+  
+}
+
+.right-content{
+  padding: 20px;
+}
+
+.topImg{
+  width: 100%;
+  height: 100vh;
+  background-image: url("C:\Users\raj\Desktop\node js\my-react-app\src\portfolio\top.jpg");
+  background-size: cover;
+} 
+
+ 
+
+

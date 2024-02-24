@@ -1,0 +1,90 @@
+body{
+    background-color: rgb(111, 54, 176);
+    align-items: center;
+    display: block;
+    flex-wrap: wrap;
+  }
+  h1{
+    color: white;
+  }
+  
+  .App {
+    text-align: center; 
+  }
+  
+  .todoForm {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 20vh;
+    width: 100%; /* Set width of parent container to 100% */
+  }
+  
+  .Todo-Wrapper {
+    background-color: rgb(35, 3, 65);
+    border: none;
+    border-radius: 5px;
+    padding: 1rem;
+    width: 60%; /* Set the desired fixed width */
+    margin: 10% auto; /* Center the box horizontally */
+  }
+  
+  
+  .todo-input{
+    background-color:  rgb(35, 3, 65);
+    width: 50%;
+    padding: 0.5rem;
+    color: white;
+    border: 1px solid  rgb(5, 108, 193);
+  }
+  
+  .todo-btn{
+    background: rgb(5, 108, 193);
+    border: none;
+    padding: 0.55rem;
+    cursor: pointer;
+  }
+  
+  h3{
+    color: white;
+    margin-left: 1rem;
+  }
+  
+  
+  .todo-task{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid yellow;
+    border-radius: 3rem;
+    background-color: rgb(5, 108, 193);
+    height: 3rem;
+    margin: 0.5rem;
+  }
+
+  .remove-btn{
+    background: rgb(58, 193, 5);
+    border: none;
+    font-size: inherit;
+    cursor: pointer;
+    width: 80px;
+    height: 30px;
+    margin: 10px;
+    border-radius: 0.5rem;
+  }
+
+  .done-btn{
+    background: rgb(255, 255, 255);
+    border: none;
+    font-size: inherit;
+    cursor: pointer;
+    width: 50px;
+    height: 30px;
+    margin: 10px;
+    border-radius: 0.5rem;
+  }
+
+  .done{
+    text-decoration: line-through;
+    color: red;
+  }
