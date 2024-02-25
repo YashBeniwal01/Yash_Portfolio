@@ -9,10 +9,8 @@ const cors = require('cors');
 const app = express();
 
 //allowing corss origin requests from http://localhost:3000
-app.use(cors({
-    origin: 'http://localhost:3000'
-  }));
   
+app.use(cors());
 
 //create the port number for your server to listen on
 const PORT = process.env.PORT || 5000;
@@ -21,7 +19,7 @@ const PORT = process.env.PORT || 5000;
 app.use(express.json());
 
 //Connect to MongoDB
-mongoose.connect('mongodb://localhost:27017/contact', {
+mongoose.connect('mongodb+srv://YashPortfolio:YashPortfolio637892.com@cluster0.m5pcizn.mongodb.net/?retryWrites=true&w=majority&appName=my_portfolio', {
     useNewUrlParser:true,
     useUnifiedTopology:true,
 });

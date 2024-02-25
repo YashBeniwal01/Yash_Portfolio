@@ -38,16 +38,12 @@ function App() {
         <section id = "services">
           <Services/>
           </section>
-
-        <section id = "contact">
-          <Contact/>
-        </section>
+ 
       </div>
     </div>
     
     </div>
- 
-    
+   
   );
 }
 
